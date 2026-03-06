@@ -1,0 +1,184 @@
+[
+    {
+        "key": "depth",
+        "label": "Depth",
+        "unit": "m",
+        "type": "number",
+        "step": 0.01,
+        "placeholder": "e.g. 3.5",
+        "role": "feature",
+        "required": true
+    },
+    {
+        "key": "n_spt",
+        "label": "N-SPT",
+        "unit": "blows",
+        "type": "number",
+        "step": 1,
+        "placeholder": "e.g. 15",
+        "role": "feature",
+        "required": false
+    },
+    {
+        "key": "soil_type",
+        "label": "Soil Type",
+        "unit": "",
+        "type": "select",
+        "options": [
+            "Clay",
+            "Silt",
+            "Sand",
+            "Gravel",
+            "Sandy Clay",
+            "Silty Clay",
+            "Clayey Sand",
+            "Clayey Silt",
+            "Silty Sand",
+            "Sandy Silt",
+            "Peat",
+            "Rock"
+        ],
+        "role": "feature",
+        "required": false
+    },
+    {
+        "key": "unit_weight",
+        "label": "Unit Weight (γ)",
+        "unit": "kN/m³",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 18",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "su",
+        "label": "Shear Strength Undrained (Su)",
+        "unit": "kPa",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 25",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "cohesion",
+        "label": "Effective Cohesion (c')",
+        "unit": "kPa",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 25",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "phi",
+        "label": "Angle of Internal Friction (φ')",
+        "unit": "°",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 30",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "e_undrained",
+        "label": "Undrained Modulus (Eu)",
+        "unit": "kPa",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 5000",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "e_drained",
+        "label": "Drained Modulus (E')",
+        "unit": "kPa",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 5000",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "cc",
+        "label": "Compression Index (Cc)",
+        "unit": "",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 0.2",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "cr",
+        "label": "Recompression Index (Cr)",
+        "unit": "",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 0.05",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "cv",
+        "label": "Coefficient of Consolidation (Cv)",
+        "unit": "m²/s",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 0.05",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "e0",
+        "label": "Initial Void Ratio (e0)",
+        "unit": "",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 0.05",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "w_n",
+        "label": "Natural Water Content (wn)",
+        "unit": "%",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 50",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "ll",
+        "label": "Liquid Limit (LL)",
+        "unit": "%",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 50",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "pl",
+        "label": "Plastic Limit (PL)",
+        "unit": "%",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 50",
+        "role": "target",
+        "required": false
+    },
+    {
+        "key": "pi",
+        "label": "Plasticity Index (PI)",
+        "unit": "%",
+        "type": "number",
+        "step": 0.1,
+        "placeholder": "e.g. 50",
+        "role": "target",
+        "required": false
+    }
+]

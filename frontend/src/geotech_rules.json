@@ -1,0 +1,24 @@
+{
+    "rules": [
+        {
+            "condition": {
+                "soil_type": [
+                    "Sand",
+                    "Gravel"
+                ]
+            },
+            "restricted_targets": [
+                "su",
+                "cohesion",
+                "cc",
+                "cr",
+                "cv",
+                "cu",
+                "ll",
+                "pl",
+                "pi"
+            ],
+            "reason": "Coarse-grained soils (Sand/Gravel) are typically non-cohesive; Undrained Shear Strength (Su), Effective Cohesion (c'), consolidation parameters (cc, cr, cv), and plasticity parameters (ll, pl, pi) are not applicable or negligible."
+        }
+    ]
+}

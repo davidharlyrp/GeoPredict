@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: hsl(0 0% 18%);
+  --color-input: hsl(0 0% 15%);
+  --color-ring: hsl(75 25% 35%);
+  --color-background: hsl(0 0% 4%);
+  --color-foreground: hsl(0 0% 96%);
+
+  --color-primary: hsl(75 25% 35%);
+  --color-primary-foreground: hsl(0 0% 100%);
+
+  --color-secondary: hsl(0 0% 12%);
+  --color-secondary-foreground: hsl(0 0% 96%);
+
+  --color-muted: hsl(0 0% 15%);
+  --color-muted-foreground: hsl(0 0% 60%);
+
+  --color-accent: hsl(75 25% 28%);
+  --color-accent-foreground: hsl(0 0% 100%);
+
+  --color-popover: hsl(0 0% 6%);
+  --color-popover-foreground: hsl(0 0% 96%);
+
+  --color-card: hsl(0 0% 6%);
+  --color-card-foreground: hsl(0 0% 96%);
+
+  /* Army Green Palette */
+  --color-army-50: #f4f5f0;
+  --color-army-100: #e6e8dc;
+  --color-army-200: #cdd2bc;
+  --color-army-300: #adb596;
+  --color-army-400: #8f9774;
+  --color-army-500: #727b56;
+  --color-army-600: #5a6143;
+  --color-army-700: #484d36;
+  --color-army-800: #3c3f2e;
+  --color-army-900: #33362a;
+  --color-army-950: #1a1c14;
+
+  --radius-xl: 0.5rem;
+  --radius-lg: 0.25rem;
+  --radius-md: 0.125rem;
+  --radius-sm: 0.0625rem;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-down {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-scale-in: scale-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slide-up: slide-up 0.4s ease-out;
+  --animate-slide-down: slide-down 0.4s ease-out;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0 0% 8%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0 0% 25%);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(75 25% 35%);
+}

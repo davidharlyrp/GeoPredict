@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  geopredict-backend:
+    build: .
+    container_name: geopredict-backend
+    image: geopredict-backend:latest
+    ports:
+      - "6002:6002"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

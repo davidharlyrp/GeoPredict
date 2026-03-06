@@ -1,0 +1,189 @@
+{
+    "id": "soil_data",
+    "name": "soil_data",
+    "type": "base",
+    "schema": [
+        {
+            "name": "depth",
+            "type": "number",
+            "required": true,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "n_spt",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": 0,
+                "max": null,
+                "noDecimal": true
+            }
+        },
+        {
+            "name": "soil_type",
+            "type": "select",
+            "required": false,
+            "options": {
+                "maxSelect": 1,
+                "values": [
+                    "Clay",
+                    "Silt",
+                    "Sand",
+                    "Gravel",
+                    "Sandy Clay",
+                    "Silty Clay",
+                    "Clayey Sand",
+                    "Clayey Silt",
+                    "Silty Sand",
+                    "Sandy Silt",
+                    "Peat",
+                    "Rock"
+                ]
+            }
+        },
+        {
+            "name": "phi",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "su",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "cohesion",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "e_undrained",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": 0,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "e_drained",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": 0,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "unit_weight",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": 0,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "cc",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "cr",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "cv",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "e0",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "w_n",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "ll",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "pl",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        },
+        {
+            "name": "pi",
+            "type": "number",
+            "required": false,
+            "options": {
+                "min": null,
+                "max": null,
+                "noDecimal": false
+            }
+        }
+    ]
+}
