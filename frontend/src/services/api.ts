@@ -1,7 +1,7 @@
 import type { PredictionResponse, TrainResult, ModelStatus, StatsResponse, DistributionData, RegressionResult } from "../types";
 import { pb } from "./pocketbase";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = import.meta.env.VITE_API_URL;
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
     const headers: Record<string, string> = { "Content-Type": "application/json" };

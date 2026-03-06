@@ -1,4 +1,4 @@
-# Geotechnical Parameter Predictor: Comprehensive Technical Documentation (v5.0.0)
+# Geotechnical Parameter Predictor - Technical Documentation (v6.3.0)
 
 ## 1. Executive Summary
 The **Geotechnical Parameter Predictor** is a specialized engineering platform designed to solve the problem of missing soil data in borehole logs. By combining cross-correlated Machine Learning models with classical statistical regression and **Symbolic-Lite Formula Discovery**, the system allows engineers to estimate critical soil properties with quantified reliability.
