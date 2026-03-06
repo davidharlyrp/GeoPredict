@@ -1,0 +1,15 @@
+[build]
+  # The directory where the frontend project lives
+  base = "frontend"
+  
+  # The command to build the project
+  command = "npm run build"
+  
+  # The directory that contains the built assets (relative to base)
+  publish = "dist"
+
+# Handle SPA routing (redirect all non-file requests to index.html)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
